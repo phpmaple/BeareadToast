@@ -178,7 +178,7 @@ public class BeareadToast: UIView {
         }
     }
     
-    func show(_ animated: Bool) {
+    public func show(_ animated: Bool) {
         setNeedsDisplay()
         
         hideDelayTimer?.invalidate()
@@ -195,7 +195,7 @@ public class BeareadToast: UIView {
         }
     }
     
-    func hide(_ animated: Bool) {
+    @objc public func hide(_ animated: Bool) {
         willHide()
         
         if animated {
@@ -209,11 +209,21 @@ public class BeareadToast: UIView {
         }
     }
     
-    func hide(_ animated: Bool, after delay: TimeInterval) {
-        let timer = Timer.init(timeInterval: delay, repeats: false) { (timer) in
-            self.hide(animated)
+    public func hide(_ animated: Bool, after delay: TimeInterval) {
+        if #available(iOS 10.0, *) {
+            let timer = Timer.init(timeInterval: delay, repeats: false) { (timer) in
+                self.hide(animated)
+            }
+            RunLoop.current.add(timer, forMode: .commonModes)
+        } else {
+            let timer = Timer.init(timeInterval: delay, target: self, selector: #selector(timerAction(_:)), userInfo: animated, repeats: false)
+            RunLoop.current.add(timer, forMode: .commonModes)
         }
-        RunLoop.current.add(timer, forMode: .commonModes)
+    }
+    
+    @objc fileprivate func timerAction(_ timer: Timer) {
+        let animated = timer.userInfo as! Bool
+        hide(animated)
     }
     
     fileprivate func defaultConfig() {

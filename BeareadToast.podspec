@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "BeareadToast is bearead custom toast."
   s.description  = <<-DESC
-                    Bearead Custom Toast。
+                    Bearead Custom Toast, with Different Style.
                   DESC
 
   s.homepage     = "https://github.com/BeareadIO/BeareadToast"
