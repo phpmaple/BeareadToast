@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   s.source       = { :git => "https://github.com/BeareadIO/BeareadToast.git", :tag => "#{s.version}" }
-  s.source_files  = "BeareadToast/BeareadToast.swift,BeareadToast/BeareadToastAnimator.swift"
+  s.source_files  = "BeareadToast/BeareadToast/*.swift"
   s.resource_bundle = {
   		'BeareadToast' => ['BeareadToast/BeareadToast.bundle/*.png']
   }

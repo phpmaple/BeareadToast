@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260957BA1FE9FA46002262D7 /* BeareadToastAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260957B81FE9FA46002262D7 /* BeareadToastAnimator.swift */; };
+		260957BB1FE9FA46002262D7 /* BeareadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260957B91FE9FA46002262D7 /* BeareadToast.swift */; };
 		26336FA71FE90EC0005EF442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26336FA61FE90EC0005EF442 /* AppDelegate.swift */; };
 		26336FA91FE90EC0005EF442 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26336FA81FE90EC0005EF442 /* ViewController.swift */; };
 		26336FAC1FE90EC0005EF442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26336FAA1FE90EC0005EF442 /* Main.storyboard */; };
 		26336FAE1FE90EC0005EF442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26336FAD1FE90EC0005EF442 /* Assets.xcassets */; };
 		26336FB11FE90EC0005EF442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26336FAF1FE90EC0005EF442 /* LaunchScreen.storyboard */; };
-		26336FB91FE90F02005EF442 /* BeareadToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26336FB81FE90F02005EF442 /* BeareadToast.swift */; };
-		26336FBB1FE91779005EF442 /* BeareadToastAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26336FBA1FE91778005EF442 /* BeareadToastAnimator.swift */; };
 		26336FBD1FE96491005EF442 /* BeareadToast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 26336FBC1FE96491005EF442 /* BeareadToast.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260957B81FE9FA46002262D7 /* BeareadToastAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeareadToastAnimator.swift; sourceTree = "<group>"; };
+		260957B91FE9FA46002262D7 /* BeareadToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeareadToast.swift; sourceTree = "<group>"; };
 		26336FA31FE90EC0005EF442 /* BeareadToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeareadToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26336FA61FE90EC0005EF442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26336FA81FE90EC0005EF442 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,8 +27,6 @@
 		26336FAD1FE90EC0005EF442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26336FB01FE90EC0005EF442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26336FB21FE90EC0005EF442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26336FB81FE90F02005EF442 /* BeareadToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeareadToast.swift; sourceTree = "<group>"; };
-		26336FBA1FE91778005EF442 /* BeareadToastAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeareadToastAnimator.swift; sourceTree = "<group>"; };
 		26336FBC1FE96491005EF442 /* BeareadToast.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BeareadToast.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260957B71FE9FA46002262D7 /* BeareadToast */ = {
+			isa = PBXGroup;
+			children = (
+				260957B81FE9FA46002262D7 /* BeareadToastAnimator.swift */,
+				260957B91FE9FA46002262D7 /* BeareadToast.swift */,
+			);
+			path = BeareadToast;
+			sourceTree = "<group>";
+		};
 		26336F9A1FE90EBF005EF442 = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +71,8 @@
 			children = (
 				26336FA61FE90EC0005EF442 /* AppDelegate.swift */,
 				26336FA81FE90EC0005EF442 /* ViewController.swift */,
+				260957B71FE9FA46002262D7 /* BeareadToast */,
 				26336FBC1FE96491005EF442 /* BeareadToast.bundle */,
-				26336FB81FE90F02005EF442 /* BeareadToast.swift */,
-				26336FBA1FE91778005EF442 /* BeareadToastAnimator.swift */,
 				26336FAA1FE90EC0005EF442 /* Main.storyboard */,
 				26336FAD1FE90EC0005EF442 /* Assets.xcassets */,
 				26336FAF1FE90EC0005EF442 /* LaunchScreen.storyboard */,
@@ -146,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26336FB91FE90F02005EF442 /* BeareadToast.swift in Sources */,
+				260957BB1FE9FA46002262D7 /* BeareadToast.swift in Sources */,
+				260957BA1FE9FA46002262D7 /* BeareadToastAnimator.swift in Sources */,
 				26336FA91FE90EC0005EF442 /* ViewController.swift in Sources */,
 				26336FA71FE90EC0005EF442 /* AppDelegate.swift in Sources */,
-				26336FBB1FE91779005EF442 /* BeareadToastAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
