@@ -55,7 +55,7 @@ public class BeareadToast: UIView {
                 loadingView.isHidden = true
             }
             else if type == .loading {
-                contentView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+                contentView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
                 text = "Loading..."
                 lblToast.text = text
                 imgToast.isHidden = true

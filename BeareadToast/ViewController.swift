@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let _ = BeareadToast.showError(text: "Error", inView: view, hide: 2)
     }
     @IBAction func loadingAction(_ sender: UIButton) {
-        let _ = BeareadToast.showLoading(inView: view, hide: 2)
+        let _ = BeareadToast.showLoading(inView: view)
     }
     @IBAction func textAction(_ sender: UIButton) {
         let _ = BeareadToast.showText(text: "Test Message", inView: view, hide: 2)
