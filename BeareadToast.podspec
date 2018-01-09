@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "BeareadToast"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "BeareadToast is bearead custom toast."
   s.description  = <<-DESC
                     Bearead Custom Toast, with Different Style.
