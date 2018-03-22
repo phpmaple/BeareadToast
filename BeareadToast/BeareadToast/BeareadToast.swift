@@ -12,7 +12,7 @@ import UIKit
 fileprivate struct ToastMacros {
     static let isIphoneX: Bool = UIScreen.main.bounds.height == 812
     static let bottomHeight: CGFloat = ToastMacros.isIphoneX ? 83 : 49
-    static let topHeight: CGFloat = ToastMacros.isIphoneX ? 88 : 64
+    static let topHeight: CGFloat = 88
 }
 
 public enum ToastAnimationType {
