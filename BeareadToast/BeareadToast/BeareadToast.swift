@@ -185,7 +185,8 @@ public class BeareadToast: UIView {
         willShow()
         
         if animated {
-            self.animator.show(completion: { (finished) in
+            self.animator.show(completion: {[weak self] (finished) in
+                guard let `self` = self else { return }
                 self.didShow()
             })
         } else {
@@ -199,7 +200,8 @@ public class BeareadToast: UIView {
         willHide()
         
         if animated {
-            self.animator.hide(completion: { (finished) in
+            self.animator.hide(completion: {[weak self] (finished) in
+                guard let `self` = self else { return }
                 self.didHide()
             })
         } else {
