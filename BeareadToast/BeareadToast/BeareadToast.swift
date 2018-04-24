@@ -138,7 +138,7 @@ public class BeareadToast: UIView {
     }
     
     deinit {
-        if (hideDelayTimer?.isValid)! {
+        if hideDelayTimer != nil && (hideDelayTimer?.isValid)! {
             hideDelayTimer?.invalidate()
             hideDelayTimer = nil
         } else {
