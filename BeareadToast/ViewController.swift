@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BeareadToast_swift
 
 class ViewController: UIViewController {
 
